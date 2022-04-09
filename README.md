@@ -10,7 +10,8 @@ One day I will remove any hard coded information and remove not used business lo
 
 # How to run this tool
 1. Download the wikipedia dump of your choice, like this one: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2  (20gb zipped file, more than 70gb unzipped!)
-2. Execute this command: python3 -m wikiextractor.WikiExtractor  /users/artika/Downloads/enwiki-latest-pages-articles.xml.bz2 --json   -ns article   --no-templates   -o - --processes 5  2>&1
+2. Execute this command:
+            python3 -m wikiextractor.WikiExtractor  /users/artika/Downloads/enwiki-latest-pages-articles.xml.bz2 --json   -ns article   --no-templates   -o - --processes 5  2>&1
 
 This command line for example import all Wikipedia articles into a Sling/AEM instance, using 5 concurrent thread.
 
