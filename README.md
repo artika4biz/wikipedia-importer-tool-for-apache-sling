@@ -6,7 +6,7 @@ This is a fork of the original wikiextractor tool https://pypi.org/project/wikie
 The Sling / AEM hostname, port and credentials are hard coded into the WikiExtractor.py file, line 490.
 
             requests.post('http://localhost:4502/data/it-wikipedia/' + d['id'] , auth=HTTPBasicAuth('admin', 'admin'), data=d)
-One day I will remove any hard coded information and remove not used business logic (write article into a file system, etc).
+One day I will remove any hard coded information and remove not used business logic (for examplet, the original logic to write articles into a file system, etc).
 
 # How to run this tool
 1. Download the wikipedia dump of your choice, like this one: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2  (20gb zipped file, more than 70gb unzipped!)
